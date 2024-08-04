@@ -5,6 +5,7 @@ import Favorite from './Favorites.jsx'
 import Greeting from './Greeting.jsx'
 import Avatar from './Avatar.jsx'
 import Bio from './Bio.jsx'
+import Condition from './Condition.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Favorite></Favorite>
     <Images></Images>
     <Avatar></Avatar>
+    <Condition></Condition>
   </React.StrictMode>,
 )
