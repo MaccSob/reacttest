@@ -1,9 +1,14 @@
-function Item({ name, isPacked }) {
+function Item({ name, importance }) {
     return (
       <li className="item">
-        {name} {isPacked ? '✔' : 'x'}
+         {name}
+      {importance > 0 && ' '}
+      {importance > 0 &&
+        <i>(Importance: {importance})</i>
+      }
       </li>
     );
+    
   }
   
   export default function PackingList() {
@@ -12,15 +17,15 @@ function Item({ name, isPacked }) {
         <h1>Sally Ride&apos Packing List</h1>
         <ul>
           <Item 
-            isPacked={true} 
+            importance={9} 
             name="Space suit" 
           />
           <Item 
-            isPacked={true} 
+            importance={0} 
             name="Helmet with a golden leaf" 
           />
           <Item 
-            isPacked={false} 
+            importance={6} 
             name="Photo of Tam" 
           />
         </ul>

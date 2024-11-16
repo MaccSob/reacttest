@@ -6,6 +6,8 @@ import Greeting from './Greeting.jsx'
 import Avatar from './Avatar.jsx'
 import Bio from './Bio.jsx'
 import Condition from './Condition.jsx'
+import Drink from './Drink.jsx'
+import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,5 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Images></Images>
     <Avatar></Avatar>
     <Condition></Condition>
+    <Drink></Drink>
+    <App></App>
   </React.StrictMode>,
 )
