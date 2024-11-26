@@ -9,16 +9,24 @@ import Condition from './Condition.jsx'
 import Drink from './Drink.jsx'
 import App from './App.jsx'
 import './index.css'
+import Router from './Router.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  },
+  {
+    path: "router",
+    element: <Router/>,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Bio></Bio>
-    <Greeting />
-    <Favorite></Favorite>
-    <Images></Images>
-    <Avatar></Avatar>
-    <Condition></Condition>
-    <Drink></Drink>
-    <App></App>
-  </React.StrictMode>,
+   <RouterProvider router={router}/>
+  </React.StrictMode>
 )
