@@ -7,7 +7,7 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="router"> Router</Link>
+            <Link to="router"> Router Page</Link>
           </li>
         </ul>
       </nav>
