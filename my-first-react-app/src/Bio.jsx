@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 export default function Bio() {
     return (
         <>
@@ -5,7 +8,13 @@ export default function Bio() {
         <h1>Welcome to my website!</h1>
       </div>
       <p className="summary">
-        You can find my thoughts here.
+      <nav>
+        <ul>
+          <li>
+            <Link to="Bio"> Bio Page</Link>
+          </li>
+        </ul>
+      </nav>
         <br></br>
         <b>And <i>pictures</i></b> of scientists!
       </p>
